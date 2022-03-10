@@ -136,8 +136,8 @@ export default {
     },
     message: {
       type: String,
-      required: false,
-      default: undefined
+      required: true,
+      default: ""
     }
   }
 }
