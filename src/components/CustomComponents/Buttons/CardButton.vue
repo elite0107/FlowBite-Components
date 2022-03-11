@@ -1,5 +1,5 @@
 <template>
-  <button class="py-3 px-6 border border-grey-200 rounded-lg flex">
+  <button class="py-3 px-6 border border-gray-200 rounded-lg flex bg-white hover:border-gray-250 hover:bg-gray-50">
     <span class="text-blue-700 mr-4" v-if="type === 'create'">
       <svg
         class="w-7 h-7"

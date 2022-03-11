@@ -30,16 +30,21 @@
         description="Upload or drag and drop your existing template and start editing."
       />
     </div>
+    <div class="flex items-center">
+      <LinkButton>Bulk contact uploader</LinkButton>
+      <LinkButton>Bulk contact uploader</LinkButton>
+    </div>
   </div>
 </template>
 
 <script>
 import Button from '@/components/OriginComponents/Button.vue';
 import CardButton from '@/components/CustomComponents/Buttons/CardButton.vue';
+import LinkButton from '@/components/CustomComponents/Buttons/LinkButton.vue';
 
 export default {
   name: "ButtonsPage",
-  components: { Button, CardButton }
+  components: { Button, CardButton, LinkButton }
 }
 </script>
 
