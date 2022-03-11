@@ -23,7 +23,7 @@ If you don't specify the type, then it will be 'success' by default.
 #### How to use
 First of all you have to import Alert Component.
 ```javascript
-import Alert from '../components/OriginComponents/Alert.vue';
+import Alert from '@/components/OriginComponents/Alert.vue';
 ```
 Next, you have to define Alert Component into Components Object of Vue Class.
 ```javascript
@@ -43,6 +43,39 @@ Next, you can use the Alert Component depending on your needs.
     subtitle="Danger alert!"
     message="Change a few things up and try submitting again."
   />
+</template>
+```
+
+### Button Component
+#### FlowBite Button Component
+##### Options
+- type: It must be one of ['default', 'alternative', 'dark', 'light', 'green', 'red', 'yellow', 'purple']
+- size: It must be one of ['xs', 'sm', 'base', 'lg', 'xl']
+- icon: True of False. Shows icon if true.
+##### How to use
+First of all you have to import Alert Component.
+```javascript
+import Button from '@/components/OriginComponents/Button.vue';
+```
+Next, you have to define Alert Component into Components Object of Vue Class.
+```javascript
+export default {
+  name: ""
+  components: {
+    Button
+  }
+}
+```
+Next, you can use the Alert Component depending on your needs.
+```html
+<template>
+  <Button
+    type="red"
+    size="xl"
+    :icon="true"
+  >
+    Button
+  </Button>
 </template>
 ```
 
