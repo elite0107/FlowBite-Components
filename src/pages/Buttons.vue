@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex items-center mb-4">
+    <div class="flex items-center flex-wrap mb-4">
       <Button class="mr-2">Default</Button>
       <Button type="alternative" class="mr-2" size="xs">Alternative</Button>
       <Button type="dark" class="mr-2" size="sm">Dark</Button>
@@ -12,19 +12,23 @@
     </div>
     <div class="grid grid-cols-4 gap-4">
       <CardButton
+        class="col-span-4 md:col-span-2 lg:col-span-1"
         title="Create New Component"
         description="Choose a template and start drafting your contract."
       />
       <CardButton
+        class="col-span-4 md:col-span-2 lg:col-span-1"
         title="Create New Component"
         description="Choose a template and start drafting your contract."
       />
       <CardButton
+        class="col-span-4 md:col-span-2 lg:col-span-1"
         type="upload"
         title="Upload Contract"
         description="Upload or drag and drop your existing template and start editing."
       />
       <CardButton
+        class="col-span-4 md:col-span-2 lg:col-span-1"
         type="upload"
         title="Upload Contract"
         description="Upload or drag and drop your existing template and start editing."
@@ -47,7 +51,3 @@ export default {
   components: { Button, CardButton, LinkButton }
 }
 </script>
-
-<style scoped>
-
-</style>
