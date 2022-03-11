@@ -1,15 +1,20 @@
 <template>
-  <Alerts />
+  <div class="p-12">
+    <Alerts />
+    <Buttons />
+  </div>
 </template>
 
 <script>
 // import Pages
 import Alerts from './pages/Alerts.vue';
+import Buttons from './pages/Buttons.vue';
 
 export default {
   name: 'App',
   components: {
-    Alerts
+    Alerts,
+    Buttons
   }
 }
 </script>
