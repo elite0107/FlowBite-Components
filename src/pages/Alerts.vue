@@ -57,7 +57,3 @@ export default {
   components: { Alert }
 }
 </script>
-
-<style scoped>
-
-</style>
